@@ -1,4 +1,37 @@
+/* COLORS PALETTE */
+:root{
+    --color-bg-nav:#1b72e8;
+    --color-bg-main:#f8f9fa;
+    --color-bg-card-title:#f7f7f7;
+    --color-bg-search:#e5e5e5;
+}
+/* FONTS */
 body{
-    font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+/* UTILITIES */
+.wrap{
+    background-color: var(--color-bg-main);
+    width: 100%;
+    height: 100vh;
+}
+header{
+    width: 100%;
+    height: 70px;
+}
+/* MAIN SECTION */
+main{
+    width: 100%;
+    height: calc(100% - 70px);
+}
+#sidebar{
+    width: 150px;
+    background-color: var(--color-bg-nav);
+    height: 100%;
+}
+#main-content{
+    width: calc(100% - 150px);
+    overflow-y: auto;
+    background-color: red;
 }
