@@ -1,37 +1,60 @@
 /* COLORS PALETTE */
 :root{
-    --color-bg-nav:#1b72e8;
-    --color-bg-main:#f8f9fa;
-    --color-bg-card-title:#f7f7f7;
-    --color-bg-search:#e5e5e5;
-}
-/* FONTS */
-body{
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Montserrat', sans-serif;
+    --color-main-nav-bg:#1b72e8;
+    --color-wrapper-bg:#f8f9fa;
+    --color-card-title-bg:#f7f7f7;
+    --color-nav-bg:#e5e5e5;
+    --color-sidebar-bg:#051e34;
 }
 /* UTILITIES */
-.wrap{
-    background-color: var(--color-bg-main);
-    width: 100%;
-    height: 100vh;
+.wrapper{
+    background-color: var(--color-wrapper-bg);
 }
+nav ul li{
+    list-style: none;
+    padding: 0px 5px;
+}
+.fa-solid{
+    color: #5b5858;
+}
+.badge{
+    font-size: 0.50em;
+}
+.plus-btn{
+    content: "+";
+    width:40px;
+    height: 40px;
+}
+/* HEADER */
 header{
     width: 100%;
     height: 70px;
+    background-color: var(--color-nav-bg);
 }
-/* MAIN SECTION */
+header nav,.row,.col{
+    height: 100%;
+}
+/* MAIN */
 main{
     width: 100%;
     height: calc(100% - 70px);
+    display: flex;
 }
+/* SIDEBAR */
 #sidebar{
     width: 150px;
-    background-color: var(--color-bg-nav);
     height: 100%;
+    background-color:var(--color-sidebar-bg) ;
+    background-image: url(img/sidebar-bg.png);
 }
+/* MAIN CONTENT */
 #main-content{
     width: calc(100% - 150px);
     overflow-y: auto;
-    background-color: red;
+    /* overflow-y: hidden; */
+}
+.card-content{
+    margin: 20px;
+    border: 1px solid grey;
+    padding: 10px;
 }
